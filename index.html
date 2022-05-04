@@ -43,12 +43,38 @@
         <p>
             Inscreva-se para saber mais sobre o lançamento
         </p>
-        <button>
+        <button onclick="Modal.open()">
             Inscreva-se
         </button>
     </main>
     <div class="right"><img src="./images/rocket.svg" alt="Imagem de um foguete decolando"></div>
     <div class="bottom"><img src="./images/bottom-image.svg" alt="Enfeite de baixo"></div>
+
+    <div class="modal-overlay">
+        <div class="modal">
+            <h1>Inscreva-se</h1>
+            <form action="#" onsubmit="Modal.alert()">
+                <div class="inputs">
+                    <div class="name input">
+                        <label for="name">Nome </label>
+                        <input type="text" name="name" id="name" placeholder="Seu nome aqui" required>
+                    </div>
+                    <div class="email input">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="exemplo@gmail.com" required>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <a href="#" class="button cancel" onclick="Modal.close()">
+                        Cancelar
+                    </a>
+                    <button class="button subscribe">
+                        Inscrever-se
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
 
     <script src="./index.js"></script>
 </body>

@@ -131,6 +131,107 @@ main button:hover {
     height: 100%;
 }
 
+/* =-=-=-=-=-=-=-= Modal =-=-=-=-=-=-=-= */
+
+.modal-overlay {
+    opacity: 0;
+    visibility: hidden;
+
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-overlay.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal {
+    padding: 2.4rem;
+    background-color: #fff;
+    border-radius: .4rem;
+    width: min(40rem, 90%);
+
+    font-size: 3rem;
+}
+
+.modal h1 {
+    font-size: 3.4rem;
+    color: var(--purple);
+    margin-bottom: 1rem;
+}
+
+.modal .input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 1.6rem;
+
+    text-align: left;
+}
+
+.modal label {
+    font-size: 1.6rem;
+    color: var(--black);
+    margin-bottom: .4rem;
+}
+
+.modal input {
+    font-size: 1.4rem;
+    padding: 1rem;
+    width: 100%;
+    height: 4rem;
+    border: 1px solid var(--light-grey);
+    border-radius: .4rem;
+}
+
+.modal input::placeholder {
+    opacity: 0.5;
+}
+
+.modal .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.modal .buttons .button {
+    opacity: 0.8;
+    height: 4rem;
+    width: 48%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .4rem;
+    cursor: pointer;
+
+    font-size: 1.6rem;
+}
+
+.modal .buttons .button:hover {
+    opacity: 1;
+}
+
+.cancel {
+    border: 2px solid #E92929;
+    color: #E92929;
+}
+
+.subscribe {
+    background-color: #49AA26;
+    color: white;
+    border: none;
+}
+
 /* =-=-=-=-=-=-=-= Responsive =-=-=-=-=-=-=-= */
 
 @media (max-width: 978px) {
