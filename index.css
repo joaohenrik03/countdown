@@ -1,0 +1,168 @@
+/* =-=-=-=-=-=-=-= Global =-=-=-=-=-=-=-= */
+
+:root {
+    --black: #4D4C59;
+    --purple: #6C63FF;
+    --light-grey: #C8C8C8;
+    --text-color: #9C9AB6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    font-size: 62.5%;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8.2rem;
+}
+
+.top {
+    position: fixed;
+    top: 0;
+    left: 0; 
+    height: 13rem;
+    width: 100%;
+    z-index: -1;
+}
+
+.bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0; 
+    height: 13rem;
+    width: 100%;
+    z-index: -1;
+}
+
+/* =-=-=-=-=-=-=-= Main =-=-=-=-=-=-=-= */
+
+main {
+    width: 49rem;
+}
+
+main h1 {
+    font-size: 3.6rem;  
+    line-height: 5.4rem;
+    letter-spacing: 10.5%;
+    text-transform: uppercase;
+    color: var(--purple);
+
+    margin-bottom: 1.9rem;
+}
+
+main #countdown {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 4.6rem;
+}
+
+main p {
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: var(--light-grey);
+    line-height: 2.1rem;
+    text-align: center;
+}
+
+main #countdown span {
+    font-weight: 400;
+    font-size: 7.2rem;
+    color: var(--black);
+}
+
+main > p {
+    color: var(--text-color);
+    font-weight: 400;
+
+    margin-bottom: 3.1rem;
+}
+
+main button {
+    display: block;
+    width: 16rem;
+    height: 4.6rem;
+    margin-inline: auto;
+    cursor: pointer;
+
+    border: none;
+    border-radius: 1rem;
+    background-color: var(--purple);
+    opacity: 0.8;
+
+    color: white;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+
+main button:hover {
+    opacity: 1;
+}
+
+/* =-=-=-=-=-=-=-= Rocket right =-=-=-=-=-=-=-= */
+
+.right {
+    max-width: 40rem;
+    max-height: 50rem;
+}
+
+.right img {
+    width: 100%;
+    height: 100%;
+}
+
+/* =-=-=-=-=-=-=-= Responsive =-=-=-=-=-=-=-= */
+
+@media (max-width: 978px) {
+    .right {
+        display: none;
+    }
+
+    main {
+        width: min(49rem, 90%);
+    }
+}
+
+@media (max-width: 578px) {
+    main #countdown {
+        display: flex;
+        gap: .5rem;
+    }
+
+    main p {
+        font-size: 1.2rem;
+    }
+
+    main #countdown span {
+        font-size: 5rem;
+    }
+}
+
+@media (max-width: 378px) {
+    main #countdown span {
+        font-size: 4rem;
+    }
+}
+
+
+
