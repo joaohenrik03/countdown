@@ -23,7 +23,13 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Bibliotecas
 
-- [Google Fonts](https://fonts.google.com/)
+- [React JS](https://pt-br.reactjs.org/)
+
+## ▶️ Como executar
+
+- Clone o repositório
+- Rode `npm install` para baixar as dependências
+- Rode o `npm run start` para iniciar a aplicação
 
 ## 💻 Projeto
 
